@@ -1,6 +1,6 @@
 const config = {
   projectName: 'lightApp',
-  date: '2019-6-1',
+  date: '2019-6-2',
   designWidth: 750,
   deviceRatio: {
     '640': 2.34 / 2,
@@ -70,6 +70,7 @@ const config = {
   h5: {
     publicPath: '/',
     staticDirectory: 'static',
+    esnextModules: ['taro-ui'],
     module: {
       postcss: {
         autoprefixer: {

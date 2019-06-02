@@ -1,0 +1,30 @@
+.activity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 12PX;
+  padding: 0 10PX;
+  height: 30PX;
+  margin-top: 10PX;
+}
+.activity .type {
+  margin-top: 4PX;
+  height: 20PX;
+  width: 20PX;
+  color: #ffffff;
+  background: #ff4e5e;
+  border-radius: 1PX;
+  text-align: center;
+  line-height: 20PX;
+  z-index: 3;
+}
+.activity .length {
+  color: #7c2512;
+  line-height: 30PX;
+}
+.activity .activity_s {
+  color: #7c312a;
+  line-height: 30PX;
+  margin-left: -110PX;
+}
+/*# sourceMappingURL=activity.css.map */

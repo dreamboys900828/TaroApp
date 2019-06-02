@@ -1,10 +1,12 @@
 import Taro, {Component} from '@tarojs/taro'
 import {View, Button, Text} from '@tarojs/components'
+import Head from '../../components/head/head'
+import Scroll from '../../components/head/scrolltop'
+import Food from '../../components/food/food'
 
 import './index.less'
 
 class Index extends Component {
-
   config = {
     navigationBarTitleText: '首页',
     enablePullDownRefresh: true,
@@ -12,9 +14,14 @@ class Index extends Component {
     pageOrientation: 'auto'
   };
 
-  // 页面加载时触发(还未加载完成)
-  componentWillMount(){
+  constructor() {
+    super(...arguments);
   }
+
+  // 页面加载时触发(还未加载完成)
+  componentWillMount() {
+  }
+
   // 页面初次渲染完成时触发(已加载完成)
   componentDidMount() {
   }
@@ -30,11 +37,19 @@ class Index extends Component {
   // 页面隐藏/切入后台时触发， 如 navigateTo 或底部 tab 切换到其他页面，小程序切入后台等
   componentDidHide() {
   }
+
+  onPageScroll(e) {
+    Scroll.bannerTop(e);
+  }
+
   render() {
     return (
-      <View></View>
+      <View>
+        <Head />
+        <Food />
+      </View>
     )
   }
 }
 
-export default Index
+export default Index;

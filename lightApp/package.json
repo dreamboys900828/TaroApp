@@ -2,7 +2,7 @@
   "name": "lightApp",
   "version": "1.0.0",
   "private": true,
-  "description": "myProject",
+  "description": "「-(~ ` mm `~)-」",
   "scripts": {
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
@@ -35,7 +35,8 @@
     "nerv-devtools": "^1.4.0-beta.5",
     "redux": "^4.0.0",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "taro-ui": "latest"
   },
   "devDependencies": {
     "@types/react": "^16.4.8",

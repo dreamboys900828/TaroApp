@@ -1,8 +1,10 @@
-import '@tarojs/async-await'
+import '_@tarojs_async-await@1.3.0-beta.6@@tarojs/async-await'
 import Taro, {Component} from '@tarojs/taro'
 import {Provider} from '@tarojs/redux'
-
-import Parent from './pages/index/Parent'
+/**
+ * Taro-UI 组件的全局样式表
+ */
+import 'taro-ui/dist/style/index.scss' // 全局引入一次即可
 
 import configStore from './store'
 
@@ -59,7 +61,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <Parent/>
+
       </Provider>
     )
   }
