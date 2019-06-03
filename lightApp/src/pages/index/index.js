@@ -38,8 +38,8 @@ class Index extends Component {
   componentDidHide() {
   }
 
-  onPageScroll(e) {
-    Scroll.bannerTop(e);
+  onPageScroll(obj: Taro.PageScrollObject): void {
+    Scroll.bannerTop(obj);
   }
 
   render() {
